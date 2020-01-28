@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Musician = (props) => {
-  return <p>{props.name}</p>;
+const Musician = ({name}) => {
+  return <p>{name}</p>;
 }
 
 
