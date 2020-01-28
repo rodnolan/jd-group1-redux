@@ -10,6 +10,15 @@ const mapStateToProps = ( reduxState ) => {
   }
 }
 
+// this function returns an object with the ACTION CREATOR *FUNCTIONS* that 
+// will be passed as props to the dumb component, Musician
+const mapDispatchToProps = ( dispatch ) => {
+  return {
 const MusicianContainer = connect( mapStateToProps )(Musician);
+  }
+}
+
+
+const MusicianContainer = connect( mapStateToProps, mapDispatchToProps )(Musician);
 
 export default MusicianContainer;
