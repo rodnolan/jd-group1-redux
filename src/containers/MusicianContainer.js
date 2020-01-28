@@ -2,7 +2,7 @@ import Musician from './../components/Musician';
 import { connect } from 'react-redux';
 
 // this function returns an object with the props that 
-// will be passed to the dum component, Musician
+// will be passed to the dumb component, Musician
 const mapStateToProps = ( reduxState ) => {
   return {
     name: reduxState.name
