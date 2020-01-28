@@ -2,6 +2,6 @@ const defaultState = {
   name: 'Bob Dylan'
 }
 
-export default function reducer1(state = defaultState) {
+export default function musicianReducer(state = defaultState) {
   return {...state};
 }
