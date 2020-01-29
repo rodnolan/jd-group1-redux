@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import MusicianContainer from './containers/MusicianContainer';
+import TeacherContainer from './containers/TeacherContainer';
+// import MusicianContainer from './containers/MusicianContainer';
 
 function App() {
   return (
     <div className="App">
-      <MusicianContainer />
+      {/* <MusicianContainer /> */}
+      <TeacherContainer />
     </div>
   );
 }

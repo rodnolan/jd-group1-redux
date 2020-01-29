@@ -6,8 +6,9 @@ import * as serviceWorker from './serviceWorker';
 
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import musicianReducer from './redux/reducers/musicianReducer';
-const store = createStore(musicianReducer);
+// import musicianReducer from './redux/reducers/musicianReducer';
+import teacherReducer from './redux/reducers/teacherReducer';
+const store = createStore(teacherReducer);
 
 ReactDOM.render(
   <Provider store={store}>
