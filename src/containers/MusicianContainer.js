@@ -6,7 +6,8 @@ import { updateMusicianAction } from './../redux/actions/musicianActions';
 // will be passed to the dumb component, Musician
 const mapStateToProps = ( reduxState ) => {
   return {
-    name: reduxState.name
+    name: reduxState.name,
+    inst: reduxState.inst
     // this means that, in Musician, I can display props.name
   }
 }
@@ -15,9 +16,9 @@ const mapStateToProps = ( reduxState ) => {
 // will be passed as props to the dumb component, Musician
 const mapDispatchToProps = ( dispatch ) => {
   return {
-    updateMusician: (musicianName) => {
+    updateMusician: (musicianName, inst) => {
       console.log('about to dispatch an action creator function from the container');
-      dispatch(updateMusicianAction(musicianName))
+      dispatch(updateMusicianAction(musicianName, inst))
     }
   }
 }

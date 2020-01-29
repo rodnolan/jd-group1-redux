@@ -1,7 +1,8 @@
 import { UPDATE_MUSICIAN } from './../actions/musicianActions';
 
 const defaultState = {
-  name: 'Bob Dylan'
+  name: 'Bob Dylan',
+  inst: 'harmonica'
 }
 
 export default function musicianReducer(state = defaultState, action) {
