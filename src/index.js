@@ -8,7 +8,7 @@ import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import musicianReducer from './redux/reducers/musicianReducer';
 import teacherReducer from './redux/reducers/teacherReducer';
-const rootReducer = combineReducers({ musicianReducer, teacherReducer});
+const rootReducer = combineReducers({ musicianData: musicianReducer, teacherData: teacherReducer});
 const store = createStore(rootReducer);
 
 ReactDOM.render(
