@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-// import musicianReducer from './redux/reducers/musicianReducer';
+import musicianReducer from './redux/reducers/musicianReducer';
 import teacherReducer from './redux/reducers/teacherReducer';
-const store = createStore(teacherReducer);
+const rootReducer = combineReducers({ musicianReducer, teacherReducer});
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
