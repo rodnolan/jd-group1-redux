@@ -6,8 +6,8 @@ import { updateMusicianAction } from './../redux/actions/musicianActions';
 // will be passed to the dumb component, Musician
 const mapStateToProps = ( reduxState ) => {
   return {
-    name: reduxState.name,
-    inst: reduxState.inst
+    name: reduxState.musicianData.name,
+    inst: reduxState.musicianData.inst
     // this means that, in Musician, I can display props.name
   }
 }

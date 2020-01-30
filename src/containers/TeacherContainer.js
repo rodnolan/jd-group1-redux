@@ -5,10 +5,11 @@ import { updateTeacherAction } from './../redux/actions/teacherActions';
 // this function returns an object with the props that 
 // will be passed to the dumb component, Musician
 const mapStateToProps = ( reduxState ) => {
+  console.log(reduxState);
   return {
-    name: reduxState.name,
-    subject: reduxState.subject,
-    school: reduxState.school
+    name: reduxState.teacherData.name,
+    subject: reduxState.teacherData.subject,
+    school: reduxState.teacherData.school
     // this means that, in Musician, I can display props.name, props.subject and props.school
   }
 }
